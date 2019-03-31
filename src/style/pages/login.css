@@ -1,0 +1,33 @@
+.login_page{
+    background: url('../../assets/common/loginpicture.png') round;
+    width: 100%;
+    height: 100vh;
+}
+.login_page .login_box{
+    padding-top: 30vh;
+    margin-left: 30%;
+    height: 70vh;
+    width: 40%;
+    max-width: 350px;
+    min-width: 180px;
+    /*max-width: 400px;*/
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+.login_page .login_form{
+    width: 80%;
+    height: 250px;
+}
+.login_page .login_form .login-form-forgot{
+    float: right;
+    color: #40a9ff;
+}
+
+.login_page .login_form .login-form-forgot:hover{
+    cursor: pointer;
+}
+
+.login_page .login_form .login-form-button{
+    width: 100%;
+}

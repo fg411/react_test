@@ -1,0 +1,34 @@
+.register_page{
+    background: #FDFDFD;
+}
+.register_page .register_content{
+    height: 90vh;
+    background: #F3F3F3;
+    opacity: 0.9;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+.register_page .register_content .register_box{
+    height: 90%;
+    max-height: 500px;
+    width: 80%;
+    max-width: 900px;
+    display: flex;
+    justify-content:space-between;
+}
+.register_page .register_content .register_box .register_box_img{
+    width: 60%;
+    max-width: 500px;
+    height: 100%;
+    background: url('../../assets/common/login-banner.png') no-repeat;
+}
+.register_page .register_content .register_box .register_box_form{
+    width: 40%;
+    max-width: 350px;
+    height: 100%;
+}
+.register_page .register_content .register_box{}
+.register_page .register_content .register_box{}
+.register_page .register_content .register_box{}
+.register_page .register_content .register_box{}

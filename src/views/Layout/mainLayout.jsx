@@ -16,6 +16,10 @@ import LearnThree from '../../views/web/Learn/mouseTracker'
 import Icons from '../web/home/icons'
 import Avatar from '../web/antd/avatar'
 import Timeline from '../web/antd/timeline'
+import PieChart from '../web/charts/pieChart'
+import LineChart from '../web/charts/lineChart'
+import BarChart from '../web/charts/barChart'
+import RadarChart from '../web/charts/radarChart'
 
 import {menus} from '../../routes'
 
@@ -39,7 +43,7 @@ class MainLayout extends Component{
     getSubMenu = menu => {
         let subMenu = []
         menu.map((item, k) => {
-            return subMenu.push(<Menu.Item key={k}><span><Link to={item.path}>{item.name}</Link></span></Menu.Item>)
+            return subMenu.push(<Menu.Item key={k}><Icon type={item.icon === undefined? 'desktop' : item.icon}/><span><Link to={item.path}>{item.name}</Link></span></Menu.Item>)
         })
         return subMenu
     }
@@ -96,6 +100,10 @@ class MainLayout extends Component{
                             <Route path="/icon" name='Icon' component={Icons} />
                             <Route path="/avatar" name="Avatar" component={Avatar}/>
                             <Route path="/timeline" name="Timeline" component={Timeline}/>
+                            <Route path="/lineChart" name="LineChart" component={LineChart}/>
+                            <Route path="/barChart" name="BarChart" component={BarChart}/>
+                            <Route path="/pieChart" name="PieChart" component={PieChart}/>
+                            <Route path="/radarChart" name="RadarChart" component={RadarChart}/>
                             {/*
                                 exact根据场景加或者不加
                                 这里也可以使用这种方式去验证路由权限
